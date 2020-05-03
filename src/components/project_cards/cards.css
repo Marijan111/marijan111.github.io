@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+.card-body {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px #000;
+  font-family: 'Lora', serif;
+  margin: 25px 0;
+  min-height: 515px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-body {
+    margin: 25px 10px;
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .card-body {
+    margin: 25px 15px;
+    width: 30%;
+  }
+}
+.content-img {
+  border-bottom: 3px solid #ffa600;
+  height: 200px;
+  overflow: hidden;
+}
+.card-body img {
+  height: auto;
+  object-position: center center;
+  width: 100%;
+}
+.card-body .card-text {
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 315px;
+}
+
+@media (min-width: 1024px) {
+  .card-body .card-text {
+    min-height: 320px;
+    padding-bottom: 0;
+  }
+}
+.card-text p.tag {
+  font-size: 0.9rem;
+  color: #707070;
+  letter-spacing: 3px;
+  margin-top: 5.5vh;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  .card-text p.tag {
+    margin-top: 1vh;
+  }
+}
+.card-text h2 {
+  font-size: 2rem;
+  margin-top: 25px;
+}
+.card-text p.text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 85%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.links a i {
+  transform: translate3d(0, 0, 0);
+}
+
+.card-text a {
+  padding: 7.5px 25px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  background-color: #000;
+  margin: 0 5px;
+  color: #f2eee9;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 7px 1px #ffa600 inset;
+  transition: all 0.5s ease;
+  transform: translate3d(0, 0, 0);
+}
+.card-text a:hover {
+  border: 1px solid #ffa600;
+  background-color: #ffa600;
+  box-shadow: 0px 0px 7px 1px #000 inset;
+  color: #000;
+  transform: perspective(1px) scale(1.1);
+}
