@@ -1,0 +1,16 @@
+.projects {
+  position: relative;
+  height: calc(100% - 133.5px);
+  padding-top: 40px;
+  overflow: auto;
+  text-align: center;
+  min-height: inherit;
+}
+
+@media (max-width: 769px) {
+  .projects {
+    height: calc(100% - 93.5px);
+    margin-top: 63.5px;
+    padding-top: 0;
+  }
+}

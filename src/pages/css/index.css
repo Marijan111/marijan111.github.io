@@ -1,0 +1,176 @@
+.landing-grid {
+  position: relative;
+  text-align: center;
+  height: calc(100% - 133.5px);
+  padding-top: 40px;
+}
+
+.banner-text {
+  background-color: black;
+  color: #fff;
+  margin: auto;
+  padding: 30px;
+  width: 40%;
+  box-shadow: 1px 1px 10px #000;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-text h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 1rem auto;
+}
+
+.banner-text hr {
+  color: #ffa600;
+  width: 50%;
+  margin: 5% auto;
+}
+
+.banner-text p {
+  font-size: 1.6rem;
+  margin: 1.5rem auto;
+}
+
+.social-links {
+  display: flex;
+  font-size: 3.5rem;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+.social-links i {
+  color: #fff;
+  padding: 0.5rem;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.social-links i:hover {
+  color: #ffa600;
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: all 0.2s;
+}
+
+/*<!==========DOWNLOAD BUTTON==========>*/
+
+.button {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+
+.button a {
+  background: black;
+  display: block;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  /*TYPE*/
+  color: #fff;
+  font: 1.1rem/3.1rem 'Roboto Slab', Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button a,
+.button p {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 2px #ffa600 inset;
+  transition: ease-in-out 0.3s;
+}
+
+.button p {
+  position: absolute;
+  z-index: -1;
+  background: black;
+  display: block;
+  height: 35px;
+  width: 180px;
+  margin: -50px 0 0 10px;
+  /*TYPE*/
+  text-align: center;
+  font: 0.75rem/2.8rem Helvetica, Verdana, sans-serif;
+  color: #fff;
+  /*TRANSITION*/
+  -webkit-transition: margin 0.5s ease;
+  -moz-transition: margin 0.5s ease;
+  -o-transition: margin 0.5s ease;
+  -ms-transition: margin 0.5s ease;
+  transition: margin 0.5s ease;
+}
+
+.button a:hover {
+  background: #ffa600;
+  border: 2px solid #ffa600;
+  box-shadow: 0px 0px 2px 2px #000 inset;
+  color: #000;
+}
+
+.button:hover .bottom {
+  margin: -10px 0 0 10px;
+}
+
+.button:hover .top {
+  margin: -80px 0 0 10px;
+  line-height: 30px;
+}
+
+/*==========MEDIA QUERIES==========*/
+
+@media (max-width: 1500px) {
+  .banner-text {
+    width: 50%;
+  }
+
+  .social-links {
+    width: 70%;
+  }
+}
+
+@media (max-width: 769px) {
+  .landing-grid {
+    margin-top: 63.5px;
+  }
+}
+
+@media (max-width: 665px) {
+  .social-links {
+    width: 90%;
+  }
+}
+
+@media (max-width: 520px) {
+  .banner-text {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .social-links {
+    width: 100%;
+  }
+
+  .button a {
+    height: 40px;
+    width: 200px;
+  }
+
+  .button .bottom,
+  .top {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,140 @@
+.form-app {
+  position: relative;
+  text-align: center;
+  height: calc(100% - 133.5px);
+  padding-top: 40px;
+}
+
+#form-app {
+  width: 60%;
+  margin: auto;
+  padding: 1rem 2rem 5rem;
+  background-color: black;
+  box-shadow: 1px 1px 10px #000;
+  color: #fff;
+}
+
+.form-app h1 {
+  margin: 1.5rem auto;
+  color: white;
+  font-size: 3rem;
+}
+
+.form-container {
+  margin: 0;
+  text-align: left;
+  color: white;
+}
+
+.user-info {
+  margin-top: 0.8rem;
+  margin-left: 0.6rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.user-info:first-of-type {
+  margin-top: 0;
+  margin-right: 2px;
+}
+
+.user-info span {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.user-info span:first-of-type {
+  color: #ffa600;
+}
+
+.form-input {
+  display: flex;
+  padding: 0.4rem 0.4rem;
+  margin: 0.8rem 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+}
+
+.form-input span {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  line-height: 1.1rem;
+}
+
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-size: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000;
+  font-size: 1rem;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  flex-grow: 2;
+  width: 100%;
+}
+
+input[type='submit'],
+input[type='button'] {
+  float: right;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: white;
+}
+
+input[type='button'] {
+  margin-right: 0.5rem;
+}
+
+.error-message {
+  float: left;
+  color: red;
+  font-size: 1rem;
+}
+
+input[type='submit']:disabled {
+  opacity: 0.3;
+}
+
+.submit-message {
+  font-size: 1.7rem;
+  margin: 1.3rem auto;
+}
+
+@media (max-width: 769px) {
+  .form-app {
+    margin-top: 63.5px;
+  }
+}
